@@ -1,0 +1,732 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 100px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  background: #f9f9f9;
+  padding: 60px 0;
+}
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+.hero-content .text h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+.hero-content .text p {
+  margin-bottom: 20px;
+  max-width: 400px;
+  font-size: 18px;
+}
+.hero-img img {
+  width: 500px;
+  border-radius: 10px;
+}
+
+
+.move-on {
+  background: #f2f5f9;
+  padding: 80px 0 0;
+  text-align: center;
+}
+.move-on h2 {
+  font-size: 48px;
+  margin-bottom: 60px;
+  margin-top: -40px;
+}
+.move-categories {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 40px;
+}
+.move-categories div {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.move-categories img {
+  max-height: 60px;
+  width: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.see-all-brands {
+  background: #ffffff;
+  padding: 10px 0 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: row;
+}
+.see-all-brands img {
+  height: 40px;
+  width: auto;
+  display: inline-block;
+}
+.see-all-brands .rightimg{
+  height: 8px;
+}
+.see-all-brands a {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: #28a745;
+  font-size: 16px;
+  gap: 5px;
+  margin-left: 10px;
+}
+
+
+.brand-logos {
+  margin-top: 20px;
+}
+
+.stats {
+  background: #f8fbfc;
+  padding: 60px 100PX;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-right: 10px;
+}
+
+.stats-left {
+  max-width: 40%;
+}
+
+.stats-left h3 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #222;
+}
+
+.stats-left h3 span {
+  color: #2ebd59;
+  display: block;
+}
+
+.stats-left p {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #555;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px 50px;
+}
+
+.facts div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.facts img {
+  height: 50px;
+  margin-bottom: 5px;
+  width: 100px;
+}
+
+.facts strong {
+  font-size: 32px;
+  color: #222;
+  font-weight: 700;
+}
+
+.facts p {
+  font-size: 20px;
+  color: #555;
+}
+
+
+/* LEADER SECTION */
+
+.leader {
+  background: #ffffff;
+  padding: 60px 100px;
+}
+
+.leader .item {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.leader .item img {
+  width: 280px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.leader .item h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.leader .item p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.brands {
+  text-align: left;
+  padding: 60px 40px;
+  background: #ffffff;
+}
+.brands h2 {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 40px 0 20px;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.brand-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 90px;
+  align-items: center;
+  justify-content: center; /* tambahkan ini */
+  margin-bottom: 40px;
+  padding: 30px 80px;
+}
+.brand-group img {
+  height: auto;
+  width: 190px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+.brand-group img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background: #edf3ef;
+  padding: 60px 40px;
+  font-family: Arial, sans-serif;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.footer img:first-child {
+  width: 120px;
+  height: auto;
+}
+.footer-text {
+  max-width: 400px;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.footer img:last-child {
+  width: 180px;
+  height: auto;
+}
+
+.footer-text p {
+  margin: 0 0 8px;
+}
+
+.aboutfoot{
+  font-size: 48px;
+  font-weight: 600;
+  margin: 40px 0 20px;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+.brand-logos-wrapper {
+  display: flex;
+  justify-content: flex-end; /* sejajar ke kanan */
+  gap: 20px; /* jarak antar logo */
+  flex-wrap: wrap; /* jika sempit, bisa turun ke bawah */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.brand-logos img {
+  height: 50px; /* sesuaikan dengan kebutuhan */
+  width: auto;
+  object-fit: contain;
+  image-rendering: auto;
+}
+
+/* Container utama slider */
+.brand-slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem auto;
+  max-width: 100%;
+  padding:30px 80px;
+  box-sizing: border-box;
+}
+
+/* Scrollable area */
+.brand-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  scrollbar-width: none; /* Firefox */
+}
+
+.brand-slider::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* Item gambar dalam slider */
+.brand-slider img {
+  flex: 0 0 auto;
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+}
+
+.brand-slider img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Tombol panah kiri/kanan */
+.slider-btn {
+  background-color: #ffffff;
+  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.slider-btn:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.slider-btn.left {
+  left: 0;
+}
+
+.slider-btn.right {
+  right: 0;
+}
+
+/* Judul slider */
+.brands h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Centered version of the section title */
+.section-title-with-link.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 1rem;
+  text-align: center;
+}
+
+.section-title-with-link.centered h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.see-all-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #28a745;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.see-all-link:hover {
+  color: #064633;
+}
+
+.see-all-link img.rightimg {
+  width: 16px;
+  height: 16px;
+  margin-left: 6px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 30px 80px;
+  justify-items: center;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  overflow: hidden;
+  width: 100%;
+  max-width: 260px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 16px;
+}
+
+.product-info h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.product-info p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.product-info .price {
+  font-weight: bold;
+  color: #28a745;
+  font-size: 16px;
+}
+
+/* Admin Panel Styling */
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #28a745;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+  color: #d4f5dd;
+}
+
+.main-content {
+  flex: 1;
+  background-color: #f8f9fa;
+  padding: 40px;
+}
+
+.main-content h1 {
+  color: #222;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.dashboard-stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cards {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-left: 6px solid #28a745;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  min-width: 200px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards h3 {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.cards p {
+  font-size: 28px;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.btn-add {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-add:hover {
+  background-color: #218838;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.product-table th, .product-table td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.product-table th {
+  background-color: #e9f5ed;
+  color: #333;
+  font-weight: 600;
+}
+
+.product-table td img {
+  border-radius: 6px;
+}
+
+.btn-edit {
+  background-color: #ffc107;
+  border: none;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-edit:hover {
+  background-color: #e0a800;
+}
+.btn-delete:hover {
+  background-color: #c82333;
+}
+/* Modal container */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal box */
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Modal animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Button styles */
+.btn-add, .btn-edit, .btn-delete {
+  padding: 8px 14px;
+  margin: 2px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn-add {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-edit {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Form elements in modal */
+.modal-content label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="number"],
+.modal-content input[type="file"],
+.modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.modal-content textarea {
+  resize: vertical;
+  min-height: 80px;
+}
